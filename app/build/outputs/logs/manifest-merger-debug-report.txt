@@ -1,0 +1,197 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:2:1-63:12
+	package
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:5:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:8:5-61:19
+MERGED from [com.android.support:design:25.3.1] /home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/drolik/.android/build-cache/44ed38d3eb015cd48e4a305fae214c057a6d9c75/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/drolik/.android/build-cache/670f5e696416956745451158d4213a4490d99c55/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/drolik/.android/build-cache/ef1d59aa14973f405b8bb84621283a5c13827d45/output/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /home/drolik/.android/build-cache/34f105bb85dfbe607dd50df6c53f6f58480ae9a8/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /home/drolik/.android/build-cache/4ca17022ce0e86360951a4dc48fcf5e0419a1695/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] /home/drolik/.android/build-cache/476d1c4ca3bfeff8fd34c67d803f92738fc1a262/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/drolik/.android/build-cache/3e4a1f40bf48325cfcbe7f3d884fe8f7457a2c88/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/drolik/.android/build-cache/cda2aecded6b0721fb0b80a61c7883258cd370bf/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/drolik/.android/build-cache/af8b4d624467160964edd53dfa6b5a6cf4af9dfd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/drolik/.android/build-cache/be2177fd11a31066a10270f2e67514c1ea815702/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/drolik/.android/build-cache/85727b1038acccc8b0394e7796a73e2c4afc25b3/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:11:9-41
+	android:supportsRtl
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:13:9-35
+	android:roundIcon
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:12:9-54
+	android:allowBackup
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:9:9-35
+	android:icon
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:10:9-43
+	android:theme
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.example.mislugares.MainActivity
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:15:9-24:20
+	android:label
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:17:13-45
+	android:theme
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:18:13-56
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.example.mislugares.AcercaDeActivity
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:25:9-28:59
+	android:label
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:27:13-42
+	android:theme
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:28:13-56
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:26:13-45
+activity#com.example.mislugares.PreferenciasActivity
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:29:9-31:44
+	android:label
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:31:13-41
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:30:13-49
+activity#com.example.mislugares.VistaLugarActivity
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:32:9-34:49
+	android:label
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:34:13-46
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:33:13-47
+activity#com.example.mislugares.EdicionLugarActivity
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:35:9-37:51
+	android:label
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:37:13-48
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:36:13-49
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:46:9-48:55
+	android:value
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:48:13-52
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:47:13-58
+activity#com.example.mislugares.MapaActivity
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:49:9-51:51
+	android:screenOrientation
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:51:13-49
+	android:label
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:50:13-33
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:49:19-47
+provider#android.support.v4.content.FileProvider
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:52:9-60:20
+	android:authorities
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:54:13-57
+	android:grantUriPermissions
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:56:13-47
+	android:exported
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:53:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:57:13-59:64
+	android:resource
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:59:17-51
+	android:name
+		ADDED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml:58:17-67
+uses-sdk
+INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.3.1] /home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/drolik/.android/build-cache/44ed38d3eb015cd48e4a305fae214c057a6d9c75/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/drolik/.android/build-cache/670f5e696416956745451158d4213a4490d99c55/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] /home/drolik/.android/build-cache/ef1d59aa14973f405b8bb84621283a5c13827d45/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/drolik/.android/build-cache/63860daa84e799383c17c7e7c924800212806e26/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /home/drolik/.android/build-cache/34f105bb85dfbe607dd50df6c53f6f58480ae9a8/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /home/drolik/.android/build-cache/4ca17022ce0e86360951a4dc48fcf5e0419a1695/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /home/drolik/.android/build-cache/476d1c4ca3bfeff8fd34c67d803f92738fc1a262/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/drolik/.android/build-cache/3e4a1f40bf48325cfcbe7f3d884fe8f7457a2c88/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/drolik/.android/build-cache/cda2aecded6b0721fb0b80a61c7883258cd370bf/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/drolik/.android/build-cache/af8b4d624467160964edd53dfa6b5a6cf4af9dfd/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/drolik/.android/build-cache/be2177fd11a31066a10270f2e67514c1ea815702/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /home/drolik/.android/build-cache/85727b1038acccc8b0394e7796a73e2c4afc25b3/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+		INJECTED from /home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/drolik/.android/build-cache/44ed38d3eb015cd48e4a305fae214c057a6d9c75/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/drolik/.android/build-cache/670f5e696416956745451158d4213a4490d99c55/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/drolik/.android/build-cache/ef1d59aa14973f405b8bb84621283a5c13827d45/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/drolik/.android/build-cache/63860daa84e799383c17c7e7c924800212806e26/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/drolik/.android/build-cache/476d1c4ca3bfeff8fd34c67d803f92738fc1a262/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/drolik/.android/build-cache/3e4a1f40bf48325cfcbe7f3d884fe8f7457a2c88/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/drolik/.android/build-cache/cda2aecded6b0721fb0b80a61c7883258cd370bf/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/drolik/.android/build-cache/af8b4d624467160964edd53dfa6b5a6cf4af9dfd/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/drolik/.android/build-cache/be2177fd11a31066a10270f2e67514c1ea815702/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/drolik/.android/build-cache/85727b1038acccc8b0394e7796a73e2c4afc25b3/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:19:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:20:22-64
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/drolik/.android/build-cache/0d6e409bbc54fc2bf2af566373bb62c2c988c779/output/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.1] /home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.1] /home/drolik/.android/build-cache/4ca17022ce0e86360951a4dc48fcf5e0419a1695/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] /home/drolik/.android/build-cache/4ca17022ce0e86360951a4dc48fcf5e0419a1695/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] /home/drolik/.android/build-cache/4ca17022ce0e86360951a4dc48fcf5e0419a1695/output/AndroidManifest.xml:20:20-65
