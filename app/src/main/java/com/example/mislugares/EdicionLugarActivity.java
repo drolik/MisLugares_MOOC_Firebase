@@ -4,16 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.Spinner;
-import android.widget.TextView;
-
-import java.text.DateFormat;
-import java.util.Date;
 
 public class EdicionLugarActivity extends AppCompatActivity {
     private long id;
@@ -54,7 +47,7 @@ public class EdicionLugarActivity extends AppCompatActivity {
         adaptador.setDropDownViewResource(android.R.layout.
                 simple_spinner_dropdown_item);
         tipo.setAdapter(adaptador);
-        tipo.setSelection(lugar.getTipo().ordinal());
+        tipo.setSelection(lugar.getTipoEnum().ordinal());
     }
 
     @Override
@@ -74,7 +67,7 @@ public class EdicionLugarActivity extends AppCompatActivity {
                 return true;
             case R.id.accion_guardar:
                 lugar.setNombre(nombre.getText().toString());
-                lugar.setTipo(TipoLugar.values()[tipo.getSelectedItemPosition()]);
+                lugar.setTipoEnum(TipoLugar.values()[tipo.getSelectedItemPosition()]);
                 lugar.setDireccion(direccion.getText().toString());
                 lugar.setTelefono(Integer.parseInt(telefono.getText().toString()));
                 lugar.setUrl(url.getText().toString());

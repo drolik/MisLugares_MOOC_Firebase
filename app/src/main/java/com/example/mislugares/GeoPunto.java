@@ -3,6 +3,9 @@ package com.example.mislugares;
 public class GeoPunto {
     private double longitud, latitud;
 
+    // Modificar POJO de lugar
+    public GeoPunto() {}
+
     public GeoPunto(double longitud, double latitud) {
         this.longitud = longitud;
         this.latitud = latitud;

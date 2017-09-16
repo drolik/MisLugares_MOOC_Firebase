@@ -10,13 +10,11 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
 import android.provider.MediaStore;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
@@ -129,9 +127,9 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
         TextView nombre = (TextView) v.findViewById(R.id.nombre);
         nombre.setText(lugar.getNombre());
         ImageView logo_tipo = (ImageView) v.findViewById(R.id.logo_tipo);
-        logo_tipo.setImageResource(lugar.getTipo().getRecurso());
+        logo_tipo.setImageResource(lugar.getTipoEnum().getRecurso());
         TextView tipo = (TextView) v.findViewById(R.id.tipo);
-        tipo.setText(lugar.getTipo().getTexto());
+        tipo.setText(lugar.getTipoEnum().getTexto());
 
         if (lugar.getDireccion().isEmpty()) {
             v.findViewById(R.id.barra_direccion).setVisibility(View.GONE);
