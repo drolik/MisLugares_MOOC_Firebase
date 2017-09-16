@@ -1,10 +1,26 @@
 [
     {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_mail_white_24dp.xml",
+        "source": "/home/drolik/.android/build-cache/76077023e7c27f8d60942acc0b54f51e71300925/output/res/drawable-anydpi-v21/ic_mail_white_24dp.xml"
+    },
+    {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_googleg_color_24dp.xml",
+        "source": "/home/drolik/.android/build-cache/76077023e7c27f8d60942acc0b54f51e71300925/output/res/drawable-anydpi-v21/ic_googleg_color_24dp.xml"
+    },
+    {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_twitter_bird_white_24dp.xml",
+        "source": "/home/drolik/.android/build-cache/76077023e7c27f8d60942acc0b54f51e71300925/output/res/drawable-anydpi-v21/ic_twitter_bird_white_24dp.xml"
+    },
+    {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
-        "source": "/home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+        "source": "/home/drolik/.android/build-cache/5073c0ee2eb0f6c92e401b5b9365d614d4ee47f7/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
-        "source": "/home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+        "source": "/home/drolik/.android/build-cache/5073c0ee2eb0f6c92e401b5b9365d614d4ee47f7/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_facebook_white_22dp.xml",
+        "source": "/home/drolik/.android/build-cache/76077023e7c27f8d60942acc0b54f51e71300925/output/res/drawable-anydpi-v21/ic_facebook_white_22dp.xml"
     }
 ]

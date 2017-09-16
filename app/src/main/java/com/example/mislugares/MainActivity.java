@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -95,6 +96,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         }
         if (id==R.id.menu_mapa) {
             Intent intent = new Intent(this, MapaActivity.class);
+            startActivity(intent);
+        }
+
+        // Detalles de usuario
+        if  (id == R.id.details_exit) {
+            Intent intent = new Intent(this, UserDetailsActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

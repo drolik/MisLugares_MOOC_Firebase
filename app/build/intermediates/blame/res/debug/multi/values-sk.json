@@ -7,11 +7,74 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 105,
-                    "endColumn": 106,
-                    "endOffset": 207
+                    "endLine": 5,
+                    "endColumn": 14,
+                    "endOffset": 234
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 5,
+                        "endColumn": 14,
+                        "endOffset": 184
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 239,
+                    "endLine": 9,
+                    "endColumn": 14,
+                    "endOffset": 371
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 189,
+                        "endLine": 9,
+                        "endColumn": 14,
+                        "endOffset": 321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 376,
+                    "endLine": 13,
+                    "endColumn": 14,
+                    "endOffset": 504
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 326,
+                        "endLine": 13,
+                        "endColumn": 14,
+                        "endOffset": 454
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 509,
+                    "endColumn": 106,
+                    "endOffset": 611
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -23,14 +86,14 @@
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 212,
+                    "startOffset": 616,
                     "endColumn": 107,
-                    "endOffset": 315
+                    "endOffset": 719
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -42,14 +105,14 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 320,
+                    "startOffset": 724,
                     "endColumn": 122,
-                    "endOffset": 438
+                    "endOffset": 842
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -61,14 +124,14 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 443,
+                    "startOffset": 847,
                     "endColumn": 99,
-                    "endOffset": 538
+                    "endOffset": 942
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -80,14 +143,14 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 543,
+                    "startOffset": 947,
                     "endColumn": 110,
-                    "endOffset": 649
+                    "endOffset": 1053
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -99,14 +162,14 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 654,
+                    "startOffset": 1058,
                     "endColumn": 85,
-                    "endOffset": 735
+                    "endOffset": 1139
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -118,14 +181,14 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 740,
+                    "startOffset": 1144,
                     "endColumn": 107,
-                    "endOffset": 843
+                    "endOffset": 1247
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -137,14 +200,14 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 848,
+                    "startOffset": 1252,
                     "endColumn": 117,
-                    "endOffset": 961
+                    "endOffset": 1365
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -156,14 +219,14 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 966,
+                    "startOffset": 1370,
                     "endColumn": 77,
-                    "endOffset": 1039
+                    "endOffset": 1443
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -175,14 +238,14 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1044,
+                    "startOffset": 1448,
                     "endColumn": 77,
-                    "endOffset": 1117
+                    "endOffset": 1521
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -194,14 +257,14 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1122,
+                    "startOffset": 1526,
                     "endColumn": 83,
-                    "endOffset": 1201
+                    "endOffset": 1605
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -213,14 +276,14 @@
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1206,
+                    "startOffset": 1610,
                     "endColumn": 104,
-                    "endOffset": 1306
+                    "endOffset": 1710
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -232,14 +295,14 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1311,
+                    "startOffset": 1715,
                     "endColumn": 108,
-                    "endOffset": 1415
+                    "endOffset": 1819
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -251,14 +314,14 @@
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1420,
+                    "startOffset": 1824,
                     "endColumn": 98,
-                    "endOffset": 1514
+                    "endOffset": 1918
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -270,14 +333,14 @@
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1519,
+                    "startOffset": 1923,
                     "endColumn": 105,
-                    "endOffset": 1620
+                    "endOffset": 2024
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -289,14 +352,14 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 1625,
+                    "startOffset": 2029,
                     "endColumn": 110,
-                    "endOffset": 1731
+                    "endOffset": 2135
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -308,14 +371,14 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1736,
+                    "startOffset": 2140,
                     "endColumn": 108,
-                    "endOffset": 1840
+                    "endOffset": 2244
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -327,14 +390,14 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1845,
+                    "startOffset": 2249,
                     "endColumn": 123,
-                    "endOffset": 1964
+                    "endOffset": 2368
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -346,14 +409,14 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1969,
+                    "startOffset": 2373,
                     "endColumn": 97,
-                    "endOffset": 2062
+                    "endOffset": 2466
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -365,14 +428,337 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 2067,
-                    "endColumn": 107,
-                    "endOffset": 2170
+                    "startOffset": 2471,
+                    "endColumn": 156,
+                    "endOffset": 2623
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 156,
+                        "endOffset": 207
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2628,
+                    "endColumn": 122,
+                    "endOffset": 2746
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 212,
+                        "endColumn": 122,
+                        "endOffset": 330
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2751,
+                    "endColumn": 146,
+                    "endOffset": 2893
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 335,
+                        "endColumn": 146,
+                        "endOffset": 477
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2898,
+                    "endColumn": 101,
+                    "endOffset": 2995
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 482,
+                        "endColumn": 101,
+                        "endOffset": 579
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3000,
+                    "endColumn": 72,
+                    "endOffset": 3068
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 584,
+                        "endColumn": 72,
+                        "endOffset": 652
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3073,
+                    "endColumn": 76,
+                    "endOffset": 3145
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 657,
+                        "endColumn": 76,
+                        "endOffset": 729
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3150,
+                    "endColumn": 61,
+                    "endOffset": 3207
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 734,
+                        "endColumn": 61,
+                        "endOffset": 791
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3212,
+                    "endColumn": 71,
+                    "endOffset": 3279
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 796,
+                        "endColumn": 71,
+                        "endOffset": 863
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 3284,
+                    "endColumn": 77,
+                    "endOffset": 3357
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 868,
+                        "endColumn": 77,
+                        "endOffset": 941
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3362,
+                    "endColumn": 95,
+                    "endOffset": 3453
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 946,
+                        "endColumn": 95,
+                        "endOffset": 1037
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 3458,
+                    "endColumn": 77,
+                    "endOffset": 3531
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1042,
+                        "endColumn": 77,
+                        "endOffset": 1115
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3536,
+                    "endColumn": 77,
+                    "endOffset": 3609
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1120,
+                        "endColumn": 77,
+                        "endOffset": 1193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 3614,
+                    "endColumn": 84,
+                    "endOffset": 3694
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1198,
+                        "endColumn": 84,
+                        "endOffset": 1278
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 3699,
+                    "endColumn": 99,
+                    "endOffset": 3794
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1283,
+                        "endColumn": 99,
+                        "endOffset": 1378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 3799,
+                    "endColumn": 65,
+                    "endOffset": 3860
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1383,
+                        "endColumn": 65,
+                        "endOffset": 1444
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 3865,
+                    "endColumn": 66,
+                    "endOffset": 3927
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1449,
+                        "endColumn": 66,
+                        "endOffset": 1511
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 3932,
+                    "endColumn": 144,
+                    "endOffset": 4072
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1516,
+                        "endColumn": 144,
+                        "endOffset": 1656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 4077,
+                    "endColumn": 107,
+                    "endOffset": 4180
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -384,14 +770,14 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2175,
+                    "startOffset": 4185,
                     "endColumn": 191,
-                    "endOffset": 2362
+                    "endOffset": 4372
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -403,14 +789,14 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2367,
+                    "startOffset": 4377,
                     "endColumn": 125,
-                    "endOffset": 2488
+                    "endOffset": 4498
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -422,14 +808,14 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2493,
+                    "startOffset": 4503,
                     "endColumn": 111,
-                    "endOffset": 2600
+                    "endOffset": 4610
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -441,14 +827,14 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 2605,
+                    "startOffset": 4615,
                     "endColumn": 214,
-                    "endOffset": 2815
+                    "endOffset": 4825
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -460,14 +846,14 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 2820,
+                    "startOffset": 4830,
                     "endColumn": 129,
-                    "endOffset": 2945
+                    "endOffset": 4955
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -479,14 +865,14 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 2950,
+                    "startOffset": 4960,
                     "endColumn": 130,
-                    "endOffset": 3076
+                    "endOffset": 5086
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -498,14 +884,14 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 3081,
+                    "startOffset": 5091,
                     "endColumn": 197,
-                    "endOffset": 3274
+                    "endOffset": 5284
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/4ca17022ce0e86360951a4dc48fcf5e0419a1695/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/e9878bb63eed19344b3a2698b353dc228e105667/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -517,14 +903,14 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 3279,
+                    "startOffset": 5289,
                     "endColumn": 227,
-                    "endOffset": 3502
+                    "endOffset": 5512
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -536,14 +922,14 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 3507,
+                    "startOffset": 5517,
                     "endColumn": 112,
-                    "endOffset": 3615
+                    "endOffset": 5625
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -555,14 +941,14 @@
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 3620,
+                    "startOffset": 5630,
                     "endColumn": 200,
-                    "endOffset": 3816
+                    "endOffset": 5826
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -574,14 +960,14 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 3821,
+                    "startOffset": 5831,
                     "endColumn": 131,
-                    "endOffset": 3948
+                    "endOffset": 5958
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -593,14 +979,14 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 3953,
+                    "startOffset": 5963,
                     "endColumn": 221,
-                    "endOffset": 4170
+                    "endOffset": 6180
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -612,14 +998,14 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 4175,
+                    "startOffset": 6185,
                     "endColumn": 193,
-                    "endOffset": 4364
+                    "endOffset": 6374
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -631,14 +1017,14 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 4369,
+                    "startOffset": 6379,
                     "endColumn": 97,
-                    "endOffset": 4462
+                    "endOffset": 6472
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -650,14 +1036,14 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 4467,
+                    "startOffset": 6477,
                     "endColumn": 96,
-                    "endOffset": 4559
+                    "endOffset": 6569
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -669,14 +1055,14 @@
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 4564,
+                    "startOffset": 6574,
                     "endColumn": 115,
-                    "endOffset": 4675
+                    "endOffset": 6685
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/a69e8e371088ad69c2541c94fb7fe3b921ce64d2/output/res/values-sk/values.xml",
+                    "file": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/values-sk/values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -688,14 +1074,14 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 4680,
+                    "startOffset": 6690,
                     "endColumn": 87,
-                    "endOffset": 4763
+                    "endOffset": 6773
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -707,20 +1093,438 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 4768,
+                    "startOffset": 6778,
                     "endColumn": 100,
-                    "endOffset": 4864
+                    "endOffset": 6874
                 },
                 "from": {
-                    "file": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/values-sk/values-sk.xml",
+                    "file": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/values-sk/values-sk.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
                         "startOffset": 2105,
                         "endColumn": 100,
                         "endOffset": 2201
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 6879,
+                    "endColumn": 53,
+                    "endOffset": 6928
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/fca38184ce66657349364426a9cb91c905d69154/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 6933,
+                    "endColumn": 57,
+                    "endOffset": 6986
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/2645b839de6828142ff000cf6e0b00a756515dd6/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 57,
+                        "endOffset": 108
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 6991,
+                    "endColumn": 56,
+                    "endOffset": 7043
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 459,
+                        "endColumn": 56,
+                        "endOffset": 511
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 7048,
+                    "endColumn": 50,
+                    "endOffset": 7094
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/2645b839de6828142ff000cf6e0b00a756515dd6/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 113,
+                        "endColumn": 50,
+                        "endOffset": 159
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 7099,
+                    "endColumn": 59,
+                    "endOffset": 7154
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 516,
+                        "endColumn": 59,
+                        "endOffset": 571
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 7159,
+                    "endColumn": 74,
+                    "endOffset": 7229
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 576,
+                        "endColumn": 74,
+                        "endOffset": 646
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 7234,
+                    "endColumn": 63,
+                    "endOffset": 7293
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 651,
+                        "endColumn": 63,
+                        "endOffset": 710
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 7298,
+                    "endColumn": 69,
+                    "endOffset": 7363
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/fca38184ce66657349364426a9cb91c905d69154/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 69,
+                        "endOffset": 174
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 7368,
+                    "endColumn": 51,
+                    "endOffset": 7415
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/2645b839de6828142ff000cf6e0b00a756515dd6/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 164,
+                        "endColumn": 51,
+                        "endOffset": 211
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 7420,
+                    "endColumn": 57,
+                    "endOffset": 7473
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/fca38184ce66657349364426a9cb91c905d69154/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 179,
+                        "endColumn": 57,
+                        "endOffset": 232
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 7478,
+                    "endColumn": 48,
+                    "endOffset": 7522
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 715,
+                        "endColumn": 48,
+                        "endOffset": 759
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 7527,
+                    "endColumn": 44,
+                    "endOffset": 7567
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 764,
+                        "endColumn": 44,
+                        "endOffset": 804
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 7572,
+                    "endColumn": 51,
+                    "endOffset": 7619
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/2645b839de6828142ff000cf6e0b00a756515dd6/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 216,
+                        "endColumn": 51,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 7624,
+                    "endColumn": 52,
+                    "endOffset": 7672
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 809,
+                        "endColumn": 52,
+                        "endOffset": 857
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 7677,
+                    "endColumn": 81,
+                    "endOffset": 7754
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 862,
+                        "endColumn": 81,
+                        "endOffset": 939
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 7759,
+                    "endColumn": 128,
+                    "endOffset": 7883
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 944,
+                        "endColumn": 128,
+                        "endOffset": 1068
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 7888,
+                    "endColumn": 310,
+                    "endOffset": 8194
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/fca38184ce66657349364426a9cb91c905d69154/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 237,
+                        "endColumn": 310,
+                        "endOffset": 543
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 8199,
+                    "endColumn": 82,
+                    "endOffset": 8277
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/fca38184ce66657349364426a9cb91c905d69154/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 548,
+                        "endColumn": 82,
+                        "endOffset": 626
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 8282,
+                    "endColumn": 87,
+                    "endOffset": 8365
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1073,
+                        "endColumn": 87,
+                        "endOffset": 1156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 8370,
+                    "endColumn": 57,
+                    "endOffset": 8423
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1161,
+                        "endColumn": 57,
+                        "endOffset": 1214
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 8428,
+                    "endColumn": 75,
+                    "endOffset": 8499
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1219,
+                        "endColumn": 75,
+                        "endOffset": 1290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 8504,
+                    "endColumn": 58,
+                    "endOffset": 8558
+                },
+                "from": {
+                    "file": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/values-sk/values-sk.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1295,
+                        "endColumn": 58,
+                        "endOffset": 1349
                     }
                 }
             }

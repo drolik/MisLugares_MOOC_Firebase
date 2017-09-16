@@ -1,34 +1,38 @@
 [
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/drawable-v21/abc_edit_text_material.xml"
+        "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/tw__like_action.xml",
+        "source": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/drawable-v21/tw__like_action.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+        "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
-        "source": "/home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/res/drawable-v21/design_password_eye.xml"
+        "source": "/home/drolik/.android/build-cache/5073c0ee2eb0f6c92e401b5b9365d614d4ee47f7/output/res/drawable-v21/design_password_eye.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/drawable-v21/abc_btn_colored_material.xml"
+        "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
-        "source": "/home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/res/drawable-v21/avd_show_password.xml"
+        "source": "/home/drolik/.android/build-cache/5073c0ee2eb0f6c92e401b5b9365d614d4ee47f7/output/res/drawable-v21/avd_show_password.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
-        "source": "/home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/res/drawable-v21/avd_hide_password.xml"
+        "source": "/home/drolik/.android/build-cache/5073c0ee2eb0f6c92e401b5b9365d614d4ee47f7/output/res/drawable-v21/avd_hide_password.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
-        "source": "/home/drolik/.android/build-cache/350000c17c5c5d9e3a5efca439fbd0f402db9f8e/output/res/drawable-v21/notification_action_background.xml"
+        "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/drawable-v21/notification_action_background.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
-        "source": "/home/drolik/.android/build-cache/a49e351471072679159a5bea59e9c5fa60ad0688/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+        "source": "/home/drolik/.android/build-cache/5073c0ee2eb0f6c92e401b5b9365d614d4ee47f7/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
     }
 ]
