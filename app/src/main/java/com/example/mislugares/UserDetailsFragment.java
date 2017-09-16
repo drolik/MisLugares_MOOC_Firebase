@@ -2,6 +2,7 @@ package com.example.mislugares;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -11,9 +12,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.volley.toolbox.NetworkImageView;
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class UserDetailsFragment extends Fragment{
@@ -58,7 +62,26 @@ public class UserDetailsFragment extends Fragment{
 
             }
         });
+
+
         return vista;
+    }
+
+    @Override
+    public void onActivityCreated(Bundle state) {
+        super.onActivityCreated(state);
+
+        // Foto de usuario
+        FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
+        Uri urlImagen = usuario.getPhotoUrl();
+        if (urlImagen != null) {
+            NetworkImageView fotoUsuario = (NetworkImageView)
+                    vista.findViewById(R.id.imageView);
+            Aplicacion aplicacion = (Aplicacion) getActivity().getApplicationContext();
+            fotoUsuario.setImageUrl(urlImagen.toString(),
+                    aplicacion.getLectorImagenes());
+        }
+
     }
 
 }
