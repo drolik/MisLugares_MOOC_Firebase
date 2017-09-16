@@ -8,6 +8,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Created by drolik on 18/12/16.
@@ -18,6 +20,12 @@ public class Aplicacion extends Application {
     // Variables Volley
     private static RequestQueue colaPeticiones;
     private static ImageLoader lectorImagenes;
+
+    // Variables Base de datos
+    private final static String NODO_LUGARES  = "lugares";
+    private final static String NODO_USUARIOS = "usuarios";
+    private DatabaseReference referenciaLugares;
+    private DatabaseReference referenciaUsuarios;
 
     @Override
     public void onCreate() {
@@ -39,6 +47,12 @@ public class Aplicacion extends Application {
                     }
                 });
 
+        // Bases de datos
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        database.setPersistenceEnabled(true);
+        referenciaLugares  = database.getReference().child(NODO_LUGARES);
+        referenciaUsuarios = database.getReference().child(NODO_USUARIOS);
+
     }
 
     public static RequestQueue getColaPeticiones() {
@@ -57,5 +71,11 @@ public class Aplicacion extends Application {
         Aplicacion.lectorImagenes = lectorImagenes;
     }
 
+    public DatabaseReference getReferenciaLugares() {
+        return referenciaLugares;
+    }
 
+    public DatabaseReference getReferenciaUsuarios () {
+        return referenciaUsuarios;
+    }
 }

@@ -37,6 +37,9 @@ dependencies {
     // Volley imagen
     compile 'com.android.volley:volley:1.0.0'
 
+    // BBDD FirebaseUI
+    compile 'com.firebaseui:firebase-ui-database:1.1.1'
+
 }
 
 // Integración Firebase
