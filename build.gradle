@@ -20,6 +20,7 @@ allprojects {
         jcenter()
         // Autenticación de Firebase
         maven { url 'https://maven.fabric.io/public' }
+
     }
 }
 

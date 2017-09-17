@@ -43,6 +43,8 @@ public class SelectorFragment extends Fragment {
                 startActivity(i);*/
             }
         });
-        recyclerView.setAdapter(adaptador);
+        // recyclerView.setAdapter(adaptador);
+        // Mostrar datos con FirebaseRecyclerAdapter
+        recyclerView.setAdapter(new AdaptadorLugaresFirebase());
     }
 }
