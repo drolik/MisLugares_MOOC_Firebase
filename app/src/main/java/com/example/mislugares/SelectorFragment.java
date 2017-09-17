@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 
 public class SelectorFragment extends Fragment {
     private RecyclerView recyclerView;
-    public static AdaptadorLugaresBD adaptador;
+    public static AdaptadorLugaresFirebase adaptador;
     @Override
     public View onCreateView(LayoutInflater inflador, ViewGroup contenedor,
                              Bundle savedInstanceState) {
@@ -31,20 +31,32 @@ public class SelectorFragment extends Fragment {
                 new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         layoutManager.setAutoMeasureEnabled(true); //Quitar si da problemas
+
+        adaptador = new AdaptadorLugaresFirebase();
+        adaptador.setOnItemClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                ((MainActivity) getActivity()).muestraLugar(
+                        recyclerView.getChildAdapterPosition(v));
+            }
+        });
+        recyclerView.setAdapter(adaptador);
+
+        /*
         adaptador = new AdaptadorLugaresBD(getContext(),
                 MainActivity.lugares,  MainActivity.lugares.extraeCursor());
         adaptador.setOnItemClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 ((MainActivity) getActivity()).muestraLugar(
                         recyclerView.getChildAdapterPosition(v));
-                /*Intent i = new Intent(getContext(), VistaLugarActivity.class);
-                i.putExtra("id", (long)
-                        recyclerView.getChildAdapterPosition(v));
-                startActivity(i);*/
+                //Intent i = new Intent(getContext(), VistaLugarActivity.class);
+                //i.putExtra("id", (long)
+                  //      recyclerView.getChildAdapterPosition(v));
+                //startActivity(i);
             }
         });
         // recyclerView.setAdapter(adaptador);
         // Mostrar datos con FirebaseRecyclerAdapter
         recyclerView.setAdapter(new AdaptadorLugaresFirebase());
+        */
     }
 }
