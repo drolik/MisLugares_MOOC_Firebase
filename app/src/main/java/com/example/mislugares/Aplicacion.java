@@ -10,6 +10,8 @@ import com.android.volley.toolbox.Volley;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 /**
  * Created by drolik on 18/12/16.
@@ -26,6 +28,10 @@ public class Aplicacion extends Application {
     private final static String NODO_USUARIOS = "usuarios";
     private DatabaseReference referenciaLugares;
     private DatabaseReference referenciaUsuarios;
+
+    // Firebase storage
+    private FirebaseStorage storage;
+    private static StorageReference storageRef;
 
     @Override
     public void onCreate() {
@@ -53,6 +59,11 @@ public class Aplicacion extends Application {
         referenciaLugares  = database.getReference().child(NODO_LUGARES);
         referenciaUsuarios = database.getReference().child(NODO_USUARIOS);
 
+        // Firebase storage
+        storage = FirebaseStorage.getInstance();
+        storageRef = storage.getReferenceFromUrl("gs://mis-lugares-firebase-b72fa.appspot.com/");
+
+
     }
 
     public static RequestQueue getColaPeticiones() {
@@ -77,5 +88,9 @@ public class Aplicacion extends Application {
 
     public DatabaseReference getReferenciaUsuarios () {
         return referenciaUsuarios;
+    }
+
+    public static StorageReference getStorageReference() {
+        return storageRef;
     }
 }

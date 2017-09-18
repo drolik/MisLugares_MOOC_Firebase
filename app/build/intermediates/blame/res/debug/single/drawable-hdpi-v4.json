@@ -20,12 +20,12 @@
         "source": "/home/drolik/.android/build-cache/76077023e7c27f8d60942acc0b54f51e71300925/output/res/drawable-hdpi-v4/ic_googleg_color_24dp.png"
     },
     {
-        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
-        "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/tw__ic_retweet_dark.png",
         "source": "/home/drolik/.android/build-cache/18d1b8e9dabee1605804cfec48c1afdf62004bee/output/res/drawable-hdpi-v4/tw__ic_retweet_dark.png"
+    },
+    {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
+        "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
@@ -108,12 +108,12 @@
         "source": "/home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_send_icon_white.png",
-        "source": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
-    },
-    {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
         "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_send_icon_white.png",
+        "source": "/home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",

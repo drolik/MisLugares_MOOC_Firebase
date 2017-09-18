@@ -198,6 +198,8 @@ MERGED from [com.android.support:support-vector-drawable:25.1.0] /home/drolik/.a
 MERGED from [com.android.support:recyclerview-v7:25.1.0] /home/drolik/.android/build-cache/7096d4cb4d4e12f69858632450156befa1bc4551/output/AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-database:10.0.1] /home/drolik/.android/build-cache/80f2d77650252593ca340aea1471d81a7d7c6da7/output/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-database-connection:10.0.1] /home/drolik/.android/build-cache/ba0e0c8b1be379c3e090f351d19187f7d4948408/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage:10.0.1] /home/drolik/.android/build-cache/e63d483fd58e467c2d84f36197f9ea596ff2c068/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:10.0.1] /home/drolik/.android/build-cache/f12544cf431e241e48f7c57eaad7733bb2ab59bb/output/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-core:10.0.1] /home/drolik/.android/build-cache/a47c68b6c637d2341931f5b1dbbad68e1af5508d/output/AndroidManifest.xml:4:5-42
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] /home/drolik/.android/build-cache/fb44712d6d21a41189d91a6d21854866831fdac3/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /home/drolik/.android/build-cache/4d78a2d958e3c5713067c001430ff098f2d5293b/output/AndroidManifest.xml:17:5-42

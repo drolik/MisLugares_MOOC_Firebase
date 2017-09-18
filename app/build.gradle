@@ -43,6 +43,9 @@ dependencies {
     // Mostrar datos en FirebaseRecyclerAdapter
     // compile 'com.firebaseui:firebase-ui-database:2.1.0'
 
+    // Firabase storage
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+
 }
 
 // Integración Firebase
