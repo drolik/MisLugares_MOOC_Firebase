@@ -117,7 +117,7 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
         });
         ImageView iconoBorra = (ImageView) vista.findViewById(R.id.eliminarFoto);
         iconoBorra.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) { eliminarFoto(null);
+            public void onClick(View view) { eliminarFoto();
             }
         });
         ImageView iconoHora = (ImageView) vista.findViewById(R.id.icono_hora);
@@ -463,11 +463,28 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
         startActivityForResult(intent, RESULTADO_FOTO);
     }
 
+    public void eliminarFoto() {
+        final String fichero = SelectorFragment.adaptador.getRef((int) id).getKey();;
+        StorageReference imagenRef = Aplicacion.getStorageReference().child(fichero);
 
-    public void eliminarFoto(View view) {
-        lugar.setFoto(null);
-        ponerFoto((ImageView)v.findViewById(R.id.foto), ""); //null);
-        actualizaLugar();
+
+        imagenRef.delete()
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        DatabaseReference myRef = Aplicacion.getReferenciaLugares().child(fichero);
+                        DatabaseReference imagenRef = myRef.child("foto");
+                        imagenRef.setValue(null);
+                        ponerFoto((ImageView)v.findViewById(R.id.foto), "");
+                        Toast.makeText(getActivity(), "Imagen borrada correctamente", Toast.LENGTH_LONG).show();
+
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                      public void onFailure(@NonNull Exception exception) {
+                        Toast.makeText(getActivity(), "Error al borrar la imagen", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
