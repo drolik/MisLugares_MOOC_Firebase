@@ -6,7 +6,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
     <application
         android:name="Aplicacion"
         android:allowBackup="true"
@@ -32,7 +34,10 @@
         <activity
             android:name=".EdicionLugarActivity"
             android:label="Edición de un lugar" />
-
+        <activity
+            android:name=".Dialogo"
+            android:label="Dialogo"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

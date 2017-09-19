@@ -3,19 +3,23 @@ package com.example.mislugares;
 import android.Manifest;
 import android.app.Activity;
 import android.app.DatePickerDialog;
+import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
@@ -35,12 +39,23 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.storage.OnPausedListener;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+
 import java.io.BufferedInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -56,8 +71,14 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
     final static int RESULTADO_EDITAR = 1;
     final static int RESULTADO_GALERIA = 2;
     final static int RESULTADO_FOTO = 3;
-    private Uri uriFoto;
     private View v;
+
+    final int SOLICITUD_SUBIR_PUTSTREAM = 101;
+    Boolean subiendoDatos =false;
+    ImageView foto;
+    //    final int SOLICITUD_SUBIR_PUTDATA = 102;
+    //    final int SOLICITUD_SUBIR_PUTFILE = 103;
+
 
     @Override
     public View onCreateView(LayoutInflater inflador, ViewGroup contenedor,
@@ -84,12 +105,14 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
         });
         ImageView iconoFoto = (ImageView) vista.findViewById(R.id.camara);
         iconoFoto.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) { tomarFoto(null);
+            public void onClick(View view) {
+               tomarFoto();
             }
         });
         ImageView iconoGaleria = (ImageView) vista.findViewById(R.id.galeria);
         iconoGaleria.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) { galeria(null);
+            public void onClick(View view) {
+                galeria();
             }
         });
         ImageView iconoBorra = (ImageView) vista.findViewById(R.id.eliminarFoto);
@@ -109,7 +132,111 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
                 cambiarFecha();
             }
         });
+
         return vista;
+    }
+
+    public void subirAFirebaseStorage(Integer opcion, Bitmap bitmap) {
+        final ProgressDialog progresoSubida = ProgressDialog.show(getActivity(), "Espere ...", "Subiendo ...", true);
+        UploadTask uploadTask = null;
+        final String fichero = SelectorFragment.adaptador.getRef((int) id).getKey();;
+        StorageReference imagenRef = Aplicacion.getStorageReference().child(fichero);
+        foto = (ImageView)v.findViewById(R.id.foto);
+        try {
+            switch (opcion) {
+                case SOLICITUD_SUBIR_PUTSTREAM:
+                    File filesDir = getActivity().getApplicationContext().getFilesDir();
+                    File imageFile = new File(filesDir, "test" + ".jpg");
+
+                    OutputStream os;
+                    try {
+                        os = new FileOutputStream(imageFile);
+                        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, os);
+                        os.flush();
+                        os.close();
+                    } catch (Exception e) {
+                        Log.e(getClass().getSimpleName(), "Error writing bitmap", e);
+                    }
+
+
+                    InputStream stream = new FileInputStream(imageFile);
+                    uploadTask = imagenRef.putStream(stream);
+                    break;
+
+            /*    case SOLICITUD_SUBIR_PUTDATA:
+                    imgImagen.setDrawingCacheEnabled(true);
+                    imgImagen.buildDrawingCache();
+                    Bitmap bitmap = imgImagen.getDrawingCache();
+                    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+                    byte[] data = baos.toByteArray();
+                    imagenRef = Aplicacion.getStorageReference().child(fichero);
+                    uploadTask = imagenRef.putBytes(data);
+                    Log.d("MIERROR", "AAAA");
+                    break;*/
+              /*  case SOLICITUD_SUBIR_PUTFILE:
+                    Uri file = Uri.fromFile(new File(ficheroDispositivo));
+                    uploadTask = imagenRef.putFile(file);
+                    break;*/
+            }
+            uploadTask.addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+                    Aplicacion.mostrarDialogo(getActivity().getApplicationContext(), "Ha ocurrido un error al subir la imagen.");
+                }
+            }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    DatabaseReference myRef = Aplicacion.getReferenciaLugares().child(fichero);
+                    DatabaseReference imagenRef = myRef.child("foto");
+                    imagenRef.setValue(taskSnapshot.getDownloadUrl().toString());
+                    new DownloadImageTask((ImageView) foto).execute(taskSnapshot.getDownloadUrl().toString());
+                    progresoSubida.dismiss();
+                    subiendoDatos = false;
+                    Aplicacion.mostrarDialogo(getActivity().getApplicationContext(), "Imagen subida correctamente.");
+                }
+            }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                    if (!subiendoDatos) {
+                        progresoSubida.show();
+                        subiendoDatos = true;
+                    }
+                }
+            }).addOnPausedListener(new OnPausedListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onPaused(UploadTask.TaskSnapshot taskSnapshot) {
+                    progresoSubida.dismiss();
+                    subiendoDatos = true;
+                }
+            });
+        } catch (IOException e) {
+            Aplicacion.mostrarDialogo(getActivity().getApplicationContext(), e.toString());
+        }
+    }
+
+    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+        ImageView bmImage;
+
+        public DownloadImageTask(ImageView bmImage) {
+            this.bmImage = bmImage;
+        }
+
+        protected Bitmap doInBackground(String... urls) {
+            String urldisplay = urls[0];
+            Bitmap mImagen = null;
+            try {
+                InputStream in = new java.net.URL(urldisplay).openStream();
+                mImagen = BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return mImagen;
+        }
+
+        protected void onPostExecute(Bitmap result) {
+            bmImage.setImageBitmap(result);
+        }
     }
 
     @Override
@@ -236,6 +363,7 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
                         String _id = SelectorFragment.adaptador.getRef((int) id).getKey();
                         MainActivity.lugares.borrar(_id);
 
+
                         SelectorFragment.adaptador.notifyDataSetChanged();
                         SelectorFragment selectorFragment = (SelectorFragment) getActivity().
                                 getSupportFragmentManager().findFragmentById(R.id.selector_fragment);
@@ -266,11 +394,14 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
         startActivityForResult(i, RESULTADO_EDITAR);
     }
 
-    public void galeria(View view) {
-        Intent intent = new Intent(Intent.ACTION_PICK,
-                MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(intent, RESULTADO_GALERIA);
+    public void galeria() {
+        Intent seleccionFotografiaIntent = new Intent(Intent.ACTION_PICK);
+        seleccionFotografiaIntent.setType("image/*");
+        seleccionFotografiaIntent.putExtra("id", id);
+        startActivityForResult(seleccionFotografiaIntent, RESULTADO_GALERIA);
+
     }
+
 
     private static final int SOLICITUD_PERMISO_LECTURA = 0;
 
@@ -325,43 +456,13 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
             return  BitmapFactory.decodeStream(input, null, options);
     }
 
-    public void tomarFoto(View view) {
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
-            // Create the File where the photo should go
-            File file = null;
-            try {
-                file = File.createTempFile(
-                    "img_" + (System.currentTimeMillis() / 1000),       // nombre
-                    ".jpg",                                             // extensión
-                    //Environment.getExternalStoragePublicDirectory("")
-                    getActivity().getExternalFilesDir(Environment.DIRECTORY_PICTURES)); // directorio
-            } catch (IOException ex) {
-                // Error occurred while creating the File
-            }
-            // Continue only if the File was successfully created
-            if (file != null) {
-                uriFoto = FileProvider.getUriForFile(getActivity(),
-                        "com.example.mislugares",
-                        file);
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, uriFoto);
-                startActivityForResult(intent, RESULTADO_FOTO);
-            }
-        }
-    }
 
-    public void tomarFoto2(View view) {
-        /////////////////////
-        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
-        StrictMode.setVmPolicy(builder.build());
-        ///////////////////////////
+    public void tomarFoto() {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        uriFoto = Uri.fromFile(new File(
-                Environment.getExternalStorageDirectory() + File.separator
-                        + "img_" + (System.currentTimeMillis() / 1000) + ".jpg"));
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, uriFoto);
+        intent.putExtra("id", id);
         startActivityForResult(intent, RESULTADO_FOTO);
     }
+
 
     public void eliminarFoto(View view) {
         lugar.setFoto(null);
@@ -372,30 +473,43 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent
             data) {
+        Bundle extras = getActivity().getIntent().getExtras();
+        if (extras != null) {
+            id = extras.getLong("id", -1);
+            if (id != -1) {
+                actualizarVistas(id);
+            }
+        }
         if (requestCode == RESULTADO_EDITAR) {
             actualizarVistas(id);
-            /*View s = v.findViewById(R.id.scrollView1);
-            if (s!=null) {
-                s.invalidate();
-            }*/
+            //View s = v.findViewById(R.id.scrollView1);
+            //if (s!=null) {
+             //   s.invalidate();
+            //}
             //v.findViewById(R.id.scrollView1).invalidate();
-        } else if (requestCode == RESULTADO_GALERIA) {
-            if (resultCode == Activity.RESULT_OK) {
-                lugar.setFoto(data.getDataString());
-                ponerFoto((ImageView)v.findViewById(R.id.foto), lugar.getFoto());
-                actualizaLugar();
-            } else {
-                Toast.makeText(getActivity(), "Error carfando foto", Toast.LENGTH_LONG).show();
-            }
-        } else if (requestCode == RESULTADO_FOTO) {
+        } else if (requestCode == RESULTADO_GALERIA || requestCode == RESULTADO_FOTO) {
             if (resultCode == Activity.RESULT_OK
-                    && lugar != null && uriFoto != null) {
-                lugar.setFoto(uriFoto.toString());
-                ponerFoto((ImageView)v.findViewById(R.id.foto), lugar.getFoto());
-                actualizaLugar();
+                   && lugar != null
+            ) {
+                Bitmap bitmap = null;
+                if(data.getData()==null){
+                    bitmap = (Bitmap)data.getExtras().get("data");
+                }else{
+                    try {
+                        bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), data.getData());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                if (bitmap == null) {
+                    Toast.makeText(getActivity(), "Error capturando foto", Toast.LENGTH_LONG).show();
+                }
+                subirAFirebaseStorage(SOLICITUD_SUBIR_PUTSTREAM, bitmap);
             } else {
                 Toast.makeText(getActivity(), "Error capturando foto", Toast.LENGTH_LONG).show();
             }
+
         }
     }
 

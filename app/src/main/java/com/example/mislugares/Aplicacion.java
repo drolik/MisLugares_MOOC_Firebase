@@ -1,7 +1,10 @@
 package com.example.mislugares;
 
 import android.app.Application;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.util.LruCache;
 
 import com.android.volley.RequestQueue;
@@ -26,12 +29,13 @@ public class Aplicacion extends Application {
     // Variables Base de datos
     private final static String NODO_LUGARES  = "lugares";
     private final static String NODO_USUARIOS = "usuarios";
-    private DatabaseReference referenciaLugares;
+    private static DatabaseReference referenciaLugares;
     private DatabaseReference referenciaUsuarios;
 
     // Firebase storage
     private FirebaseStorage storage;
     private static StorageReference storageRef;
+   // private static DatabaseReference misLugaresReference;
 
     @Override
     public void onCreate() {
@@ -64,6 +68,7 @@ public class Aplicacion extends Application {
         storageRef = storage.getReferenceFromUrl("gs://mis-lugares-firebase-b72fa.appspot.com/");
 
 
+
     }
 
     public static RequestQueue getColaPeticiones() {
@@ -82,7 +87,7 @@ public class Aplicacion extends Application {
         Aplicacion.lectorImagenes = lectorImagenes;
     }
 
-    public DatabaseReference getReferenciaLugares() {
+    public static DatabaseReference getReferenciaLugares() {
         return referenciaLugares;
     }
 
@@ -92,5 +97,12 @@ public class Aplicacion extends Application {
 
     public static StorageReference getStorageReference() {
         return storageRef;
+    }
+
+    static void mostrarDialogo(final Context context, final String mensaje) {
+        Intent intent = new Intent(context, Dialogo.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra("mensaje" , mensaje);
+        context.startActivity(intent);
     }
 }

@@ -12,6 +12,10 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <!-- Include required permissions for Google Maps API to run. -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -55,6 +59,10 @@
         <activity
             android:name="com.example.mislugares.EdicionLugarActivity"
             android:label="Edición de un lugar" />
+        <activity
+            android:name="com.example.mislugares.Dialogo"
+            android:label="Dialogo"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name="com.example.mislugares.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
