@@ -26,6 +26,9 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+
+import static com.example.mislugares.Aplicacion.mostrarDialogo;
+
 //a
 //asf
 public class MainActivity extends AppCompatActivity implements LocationListener {
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     private static final int SOLICITUD_PERMISO_LOCALIZACION = 0;
     static final int RESULTADO_PREFERENCIAS = 0;
     private VistaLugarFragment fragmentVista;
+
+    // Servicio
+    private static MainActivity current;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,6 +179,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         if (fragmentVista!=null && SelectorFragment.adaptador.getItemCount()>0) {
             fragmentVista.actualizarVistas(0);
         }
+
+        Bundle extras = getIntent().getExtras();
+        if (getIntent().hasExtra("body")) {
+            mostrarDialogo(this, extras.getString("body"));
+            extras.remove("body");
+        }
     }
     private void activarProveedores() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.
@@ -252,4 +264,17 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             fragment.onActivityResult(requestCode, resultCode, data);
         }
     }
+
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        current = this;
+    }
+
+    public static MainActivity getCurrentContext() {
+        return current;
+    }
+
 }
