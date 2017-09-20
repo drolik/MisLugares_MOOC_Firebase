@@ -73,6 +73,7 @@ MERGED from [com.firebaseui:firebase-ui-database:1.1.1] /home/drolik/.android/bu
 MERGED from [com.android.support:appcompat-v7:25.1.0] /home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.1.0] /home/drolik/.android/build-cache/79a79ca2024b10ea3641b8261c9aca995a89fb3b/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.1.0] /home/drolik/.android/build-cache/1caf2820bfc8622bdbadb2f2428a158f059b6aa2/output/AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:19:5-29:19
 MERGED from [com.google.firebase:firebase-core:10.0.1] /home/drolik/.android/build-cache/a47c68b6c637d2341931f5b1dbbad68e1af5508d/output/AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] /home/drolik/.android/build-cache/fb44712d6d21a41189d91a6d21854866831fdac3/output/AndroidManifest.xml:24:5-33:19
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /home/drolik/.android/build-cache/4d78a2d958e3c5713067c001430ff098f2d5293b/output/AndroidManifest.xml:24:5-28:19
@@ -220,6 +221,7 @@ MERGED from [com.google.firebase:firebase-database:10.0.1] /home/drolik/.android
 MERGED from [com.google.firebase:firebase-database-connection:10.0.1] /home/drolik/.android/build-cache/ba0e0c8b1be379c3e090f351d19187f7d4948408/output/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-storage:10.0.1] /home/drolik/.android/build-cache/e63d483fd58e467c2d84f36197f9ea596ff2c068/output/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-storage-common:10.0.1] /home/drolik/.android/build-cache/f12544cf431e241e48f7c57eaad7733bb2ab59bb/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-core:10.0.1] /home/drolik/.android/build-cache/a47c68b6c637d2341931f5b1dbbad68e1af5508d/output/AndroidManifest.xml:4:5-42
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] /home/drolik/.android/build-cache/fb44712d6d21a41189d91a6d21854866831fdac3/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /home/drolik/.android/build-cache/4d78a2d958e3c5713067c001430ff098f2d5293b/output/AndroidManifest.xml:17:5-42
@@ -445,6 +447,20 @@ ADDED from [com.twitter.sdk.android:twitter-core:2.3.0] /home/drolik/.android/bu
 		ADDED from [com.twitter.sdk.android:twitter-core:2.3.0] /home/drolik/.android/build-cache/fca38184ce66657349364426a9cb91c905d69154/output/AndroidManifest.xml:38:13-53
 	android:name
 		ADDED from [com.twitter.sdk.android:twitter-core:2.3.0] /home/drolik/.android/build-cache/fca38184ce66657349364426a9cb91c905d69154/output/AndroidManifest.xml:34:13-84
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:25:25-75
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-analytics:10.0.1] /home/drolik/.android/build-cache/fb44712d6d21a41189d91a6d21854866831fdac3/output/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /home/drolik/.android/build-cache/4d78a2d958e3c5713067c001430ff098f2d5293b/output/AndroidManifest.xml:22:5-67

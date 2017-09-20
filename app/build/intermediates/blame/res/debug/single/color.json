@@ -16,12 +16,12 @@
         "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/color/abc_search_url_text.xml"
     },
     {
-        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/color/design_error.xml",
-        "source": "/home/drolik/.android/build-cache/5073c0ee2eb0f6c92e401b5b9365d614d4ee47f7/output/res/color/design_error.xml"
-    },
-    {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
         "source": "/home/drolik/.android/build-cache/bd3cafbc7c2c11c7f89b08fa585ad7c96caf6977/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/color/design_error.xml",
+        "source": "/home/drolik/.android/build-cache/5073c0ee2eb0f6c92e401b5b9365d614d4ee47f7/output/res/color/design_error.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
