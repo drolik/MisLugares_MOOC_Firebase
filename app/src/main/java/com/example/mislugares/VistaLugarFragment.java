@@ -409,7 +409,7 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
     String lastUri;
 
     protected void ponerFoto(ImageView imageView, String uri) {
-        if (uri != null && !uri.isEmpty() && !uri.equals("null")) {
+        if (uri != null && !uri.isEmpty() && !uri.equals("null") && !uri.equals("")) {
             if (uri.startsWith("content://com.example.mislugares/") ||
                 ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.
                         READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
@@ -453,7 +453,13 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
                     Math.ceil(options.outWidth / maxAncho),
                     Math.ceil(options.outHeight / maxAlto));
             options.inJustDecodeBounds = false;
-            return  BitmapFactory.decodeStream(input, null, options);
+            Bitmap bitMap = null;
+            try {
+                bitMap = BitmapFactory.decodeStream(input, null, options);
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+            return bitMap;
     }
 
 

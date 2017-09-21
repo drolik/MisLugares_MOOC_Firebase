@@ -12,9 +12,17 @@ import static com.example.mislugares.Aplicacion.mostrarDialogo;
 public class MisLugaresFCMService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
-        if (remoteMessage.getNotification() != null) {
-            mostrarDialogo(getApplicationContext(),
-                    remoteMessage.getNotification().getBody());
+        if (remoteMessage.getData().size() > 0) {
+            String lugar="";
+            lugar ="Lugar: "+remoteMessage.getData().get("lugar")+ "\n";
+            lugar = lugar + "Comentario: "+ remoteMessage.getData().get("comentario")+ "\n";
+            lugar = lugar +"Url: "+remoteMessage.getData().get("url")+ "\n";
+            mostrarDialogo(getApplicationContext(), lugar);
+        } else {
+            if (remoteMessage.getNotification() != null) {
+                mostrarDialogo(getApplicationContext(),
+                        remoteMessage.getNotification().getBody());
+            }
         }
     }
 }

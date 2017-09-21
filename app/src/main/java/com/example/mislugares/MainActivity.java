@@ -175,15 +175,24 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
     @Override protected void onResume() {
         super.onResume();
+
+
+        Bundle extras = getIntent().getExtras();
+        if (extras!=null && extras.keySet().size()>3) {
+            String lugar="";
+            lugar ="Lugar: "+extras.getString("lugar")+ "\n";
+            lugar = lugar + "Comentario: "+ extras.getString("comentario")+ "\n";
+            lugar = lugar +"Url: "+extras.getString("url")+ "\n";
+            mostrarDialogo(getApplicationContext(), lugar);
+            for (String key : extras.keySet()) {
+                getIntent().removeExtra(key);
+            }
+            extras = null;
+        }
+
         activarProveedores();
         if (fragmentVista!=null && SelectorFragment.adaptador.getItemCount()>0) {
             fragmentVista.actualizarVistas(0);
-        }
-
-        Bundle extras = getIntent().getExtras();
-        if (getIntent().hasExtra("body")) {
-            mostrarDialogo(this, extras.getString("body"));
-            extras.remove("body");
         }
     }
     private void activarProveedores() {
