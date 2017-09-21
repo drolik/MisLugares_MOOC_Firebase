@@ -27,6 +27,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
+import com.google.firebase.messaging.FirebaseMessaging;
+
 import static com.example.mislugares.Aplicacion.mostrarDialogo;
 
 //a
@@ -66,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         });
         manejador = (LocationManager) getSystemService(LOCATION_SERVICE);
         ultimaLocalizazion();
+
+        FirebaseMessaging.getInstance().subscribeToTopic("lugares");
+
     }
 
     @Override
