@@ -59,7 +59,6 @@ MERGED from [com.android.support:design:25.1.0] /home/drolik/.android/build-cach
 MERGED from [com.android.support:transition:25.1.0] /home/drolik/.android/build-cache/f983a8b333bd71c7444391ae4075b511141e044c/output/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth:10.0.1] /home/drolik/.android/build-cache/d3b55c0ed34788d5d80ef0a202df64b5d0adbdac/output/AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.android.gms:play-services-auth:10.0.1] /home/drolik/.android/build-cache/312b816224b962bebb4ed9b2414ce08a88a49e9a/output/AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:18:5-20:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/AndroidManifest.xml:28:5-38:19
 MERGED from [com.android.support:customtabs:25.1.0] /home/drolik/.android/build-cache/1fc5d67a32006d955f098f62a1945403fb0d0964/output/AndroidManifest.xml:22:5-20
 MERGED from [com.twitter.sdk.android:twitter:2.3.0] /home/drolik/.android/build-cache/ac3b1cd1c5eea009acf0ce8796bac3df31eb4b04/output/AndroidManifest.xml:25:5-20
@@ -74,6 +73,8 @@ MERGED from [com.android.support:appcompat-v7:25.1.0] /home/drolik/.android/buil
 MERGED from [com.android.support:animated-vector-drawable:25.1.0] /home/drolik/.android/build-cache/79a79ca2024b10ea3641b8261c9aca995a89fb3b/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.1.0] /home/drolik/.android/build-cache/1caf2820bfc8622bdbadb2f2428a158f059b6aa2/output/AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-config:10.0.1] /home/drolik/.android/build-cache/ce3655727ecf72fc7580ed3f5cc7054201029690/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.firebase:firebase-core:10.0.1] /home/drolik/.android/build-cache/a47c68b6c637d2341931f5b1dbbad68e1af5508d/output/AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] /home/drolik/.android/build-cache/fb44712d6d21a41189d91a6d21854866831fdac3/output/AndroidManifest.xml:24:5-33:19
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /home/drolik/.android/build-cache/4d78a2d958e3c5713067c001430ff098f2d5293b/output/AndroidManifest.xml:24:5-28:19
@@ -214,7 +215,6 @@ MERGED from [com.android.support:transition:25.1.0] /home/drolik/.android/build-
 MERGED from [com.google.firebase:firebase-auth:10.0.1] /home/drolik/.android/build-cache/d3b55c0ed34788d5d80ef0a202df64b5d0adbdac/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-auth:10.0.1] /home/drolik/.android/build-cache/312b816224b962bebb4ed9b2414ce08a88a49e9a/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-auth-base:10.0.1] /home/drolik/.android/build-cache/d93f60ddf63739c19b63977d8f441c005890cc89/output/AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:17:5-42
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:customtabs:25.1.0] /home/drolik/.android/build-cache/1fc5d67a32006d955f098f62a1945403fb0d0964/output/AndroidManifest.xml:20:5-44
 MERGED from [com.twitter.sdk.android:twitter:2.3.0] /home/drolik/.android/build-cache/ac3b1cd1c5eea009acf0ce8796bac3df31eb4b04/output/AndroidManifest.xml:23:5-44
@@ -234,6 +234,8 @@ MERGED from [com.google.firebase:firebase-database-connection:10.0.1] /home/drol
 MERGED from [com.google.firebase:firebase-storage:10.0.1] /home/drolik/.android/build-cache/e63d483fd58e467c2d84f36197f9ea596ff2c068/output/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-storage-common:10.0.1] /home/drolik/.android/build-cache/f12544cf431e241e48f7c57eaad7733bb2ab59bb/output/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-config:10.0.1] /home/drolik/.android/build-cache/ce3655727ecf72fc7580ed3f5cc7054201029690/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-core:10.0.1] /home/drolik/.android/build-cache/a47c68b6c637d2341931f5b1dbbad68e1af5508d/output/AndroidManifest.xml:4:5-42
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] /home/drolik/.android/build-cache/fb44712d6d21a41189d91a6d21854866831fdac3/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /home/drolik/.android/build-cache/4d78a2d958e3c5713067c001430ff098f2d5293b/output/AndroidManifest.xml:17:5-42
@@ -393,14 +395,6 @@ ADDED from [com.google.android.gms:play-services-auth:10.0.1] /home/drolik/.andr
 		ADDED from [com.google.android.gms:play-services-auth:10.0.1] /home/drolik/.android/build-cache/312b816224b962bebb4ed9b2414ce08a88a49e9a/output/AndroidManifest.xml:24:88-182
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:10.0.1] /home/drolik/.android/build-cache/312b816224b962bebb4ed9b2414ce08a88a49e9a/output/AndroidManifest.xml:24:18-63
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:19:9-172
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:19:146-170
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:19:86-145
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:19:19-85
 activity#com.facebook.CustomTabMainActivity
 ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/drolik/.android/build-cache/c40c9b34393c6327df81f60b8d6d1fac87ac0792/output/AndroidManifest.xml:37:9-71
 	android:name
@@ -465,6 +459,14 @@ ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android
 		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:23:88-111
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /home/drolik/.android/build-cache/fec51bf88422112320891852a679d27f8cc9e1c5/output/AndroidManifest.xml:23:18-87
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] /home/drolik/.android/build-cache/52adbc6fdd1a23d59fed3470068f76e1c98687eb/output/AndroidManifest.xml:19:19-85
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-analytics:10.0.1] /home/drolik/.android/build-cache/fb44712d6d21a41189d91a6d21854866831fdac3/output/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /home/drolik/.android/build-cache/4d78a2d958e3c5713067c001430ff098f2d5293b/output/AndroidManifest.xml:22:5-67

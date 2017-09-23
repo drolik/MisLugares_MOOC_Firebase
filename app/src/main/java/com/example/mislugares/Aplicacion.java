@@ -4,15 +4,20 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.support.annotation.NonNull;
 import android.util.Log;
 import android.util.LruCache;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
@@ -36,6 +41,10 @@ public class Aplicacion extends Application {
     private FirebaseStorage storage;
     private static StorageReference storageRef;
    // private static DatabaseReference misLugaresReference;
+
+    // Configuración remota
+    static FirebaseRemoteConfig mFirebaseRemoteConfig;
+    static long distancia;
 
     @Override
     public void onCreate() {
@@ -67,7 +76,33 @@ public class Aplicacion extends Application {
         storage = FirebaseStorage.getInstance();
         storageRef = storage.getReferenceFromUrl("gs://mis-lugares-firebase-b72fa.appspot.com/");
 
+        // Configuración remota
+        mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
+        FirebaseRemoteConfigSettings configSettings =
+                new FirebaseRemoteConfigSettings
+                        .Builder()
+                        .setDeveloperModeEnabled(BuildConfig.DEBUG)
+                        .build();
+        mFirebaseRemoteConfig.setConfigSettings(configSettings);
 
+        mFirebaseRemoteConfig.setDefaults(R.xml.remote_config_default);
+
+        long cacheExpiration = 3600;
+        mFirebaseRemoteConfig.fetch(cacheExpiration)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        mFirebaseRemoteConfig.activateFetched();
+
+                        getDistancia();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        distancia=mFirebaseRemoteConfig.getLong("distancia");
+                    }
+                });
 
     }
 
@@ -105,4 +140,10 @@ public class Aplicacion extends Application {
         intent.putExtra("mensaje" , mensaje);
         context.startActivity(intent);
     }
+
+    private void getDistancia() {
+        distancia = mFirebaseRemoteConfig.getLong("distancia");
+    }
+
+
 }

@@ -48,6 +48,9 @@ dependencies {
 
     // Notificaciones
     compile 'com.google.firebase:firebase-messaging:10.0.1'
+
+    // Configuración remota
+    compile 'com.google.firebase:firebase-config:10.0.1'
 }
 
 // Integración Firebase

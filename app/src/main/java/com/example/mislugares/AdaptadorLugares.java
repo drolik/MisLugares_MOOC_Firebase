@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import static com.example.mislugares.Aplicacion.distancia;
+
 public class AdaptadorLugares extends
         RecyclerView.Adapter<AdaptadorLugares.ViewHolder> {
     protected Lugares lugares;           //Lugares a mostrar
@@ -79,10 +81,19 @@ public class AdaptadorLugares extends
         holder.valoracion.setRating(lugar.getValoracion());
         if (Lugares.posicionActual != null && lugar.getPosicion() != null) {
             int d=(int) Lugares.posicionActual.distancia(lugar.getPosicion());
-            if (d < 2000) {
-                holder.distancia.setText(d + " m");
+            if (d < distancia) {
+                ViewGroup.LayoutParams params=holder.itemView.getLayoutParams();
+                params.height=100;
+                holder.itemView.setLayoutParams(params);
+                if (d < 2000) {
+                    holder.distancia.setText(d + " m");
+                } else {
+                    holder.distancia.setText(d / 1000 + " Km");
+                }
             } else {
-                holder.distancia.setText(d / 1000 + " Km");
+                ViewGroup.LayoutParams params=holder.itemView.getLayoutParams();
+                params.height=0;
+                holder.itemView.setLayoutParams(params);
             }
         }
         //holder.distancia.setGravity(Gravity.RIGHT);

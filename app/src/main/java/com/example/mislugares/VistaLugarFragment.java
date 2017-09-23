@@ -254,60 +254,63 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
 
     public void actualizarVistas(final long id) {
         this.id = id;
-        lugar = SelectorFragment.adaptador.getItem((int) id);
-        if (lugar != null) {
 
-        TextView nombre = (TextView) v.findViewById(R.id.nombre);
-        nombre.setText(lugar.getNombre());
-        ImageView logo_tipo = (ImageView) v.findViewById(R.id.logo_tipo);
-        logo_tipo.setImageResource(lugar.getTipoEnum().getRecurso());
-        TextView tipo = (TextView) v.findViewById(R.id.tipo);
-        tipo.setText(lugar.getTipoEnum().getTexto());
+        if (id != -1) {
+            lugar = SelectorFragment.adaptador.getItem((int) id);
+            if (lugar != null) {
 
-        if (lugar.getDireccion().isEmpty()) {
-            v.findViewById(R.id.barra_direccion).setVisibility(View.GONE);
-        } else {
-            TextView direccion = (TextView) v.findViewById(R.id.direccion);
-            direccion.setText(lugar.getDireccion());
+                TextView nombre = (TextView) v.findViewById(R.id.nombre);
+                nombre.setText(lugar.getNombre());
+                ImageView logo_tipo = (ImageView) v.findViewById(R.id.logo_tipo);
+                logo_tipo.setImageResource(lugar.getTipoEnum().getRecurso());
+                TextView tipo = (TextView) v.findViewById(R.id.tipo);
+                tipo.setText(lugar.getTipoEnum().getTexto());
+
+                if (lugar.getDireccion().isEmpty()) {
+                    v.findViewById(R.id.barra_direccion).setVisibility(View.GONE);
+                } else {
+                    TextView direccion = (TextView) v.findViewById(R.id.direccion);
+                    direccion.setText(lugar.getDireccion());
+                }
+                if (lugar.getTelefono() == 0) {
+                    v.findViewById(R.id.barra_telefono).setVisibility(View.GONE);
+                } else {
+                    TextView telefono = (TextView) v.findViewById(R.id.telefono);
+                    telefono.setText(Integer.toString(lugar.getTelefono()));
+                }
+                if (lugar.getUrl().isEmpty()) {
+                    v.findViewById(R.id.barra_url).setVisibility(View.GONE);
+                } else {
+                    TextView url = (TextView) v.findViewById(R.id.url);
+                    url.setText(lugar.getUrl());
+                }
+                if (lugar.getComentario().isEmpty()) {
+                    v.findViewById(R.id.barra_comentario).setVisibility(View.GONE);
+                } else {
+                    TextView comentario = (TextView) v.findViewById(R.id.comentario);
+                    comentario.setText(lugar.getComentario());
+                }
+                TextView fecha = (TextView) v.findViewById(R.id.fecha);
+                fecha.setText(DateFormat.getDateInstance().format(
+                        new Date(lugar.getFecha())));
+                TextView hora = (TextView) v.findViewById(R.id.hora);
+                hora.setText(DateFormat.getTimeInstance().format(
+                        new Date(lugar.getFecha())));
+                RatingBar valoracion = (RatingBar) v.findViewById(R.id.valoracion);
+                valoracion.setOnRatingBarChangeListener(null);
+                valoracion.setRating(lugar.getValoracion());
+                valoracion.setOnRatingBarChangeListener(
+                        new RatingBar.OnRatingBarChangeListener() {
+                            @Override
+                            public void onRatingChanged(RatingBar ratingBar,
+                                                        float valor, boolean fromUser) {
+                                lugar.setValoracion(valor);
+                                actualizaLugar();
+                            }
+                        });
+                ponerFoto((ImageView) v.findViewById(R.id.foto), lugar.getFoto());
+            }
         }
-        if (lugar.getTelefono() == 0) {
-            v.findViewById(R.id.barra_telefono).setVisibility(View.GONE);
-        } else {
-            TextView telefono = (TextView) v.findViewById(R.id.telefono);
-            telefono.setText(Integer.toString(lugar.getTelefono()));
-        }
-        if (lugar.getUrl().isEmpty()) {
-            v.findViewById(R.id.barra_url).setVisibility(View.GONE);
-        } else {
-            TextView url = (TextView) v.findViewById(R.id.url);
-            url.setText(lugar.getUrl());
-        }
-        if (lugar.getComentario().isEmpty()) {
-            v.findViewById(R.id.barra_comentario).setVisibility(View.GONE);
-        } else {
-            TextView comentario = (TextView) v.findViewById(R.id.comentario);
-            comentario.setText(lugar.getComentario());
-        }
-        TextView fecha = (TextView) v.findViewById(R.id.fecha);
-        fecha.setText(DateFormat.getDateInstance().format(
-                new Date(lugar.getFecha())));
-        TextView hora = (TextView) v.findViewById(R.id.hora);
-        hora.setText(DateFormat.getTimeInstance().format(
-                new Date(lugar.getFecha())));
-        RatingBar valoracion = (RatingBar) v.findViewById(R.id.valoracion);
-        valoracion.setOnRatingBarChangeListener(null);
-        valoracion.setRating(lugar.getValoracion());
-        valoracion.setOnRatingBarChangeListener(
-                new RatingBar.OnRatingBarChangeListener() {
-                    @Override
-                    public void onRatingChanged(RatingBar ratingBar,
-                                                float valor, boolean fromUser) {
-                        lugar.setValoracion(valor);
-                        actualizaLugar();
-                    }
-                });
-        ponerFoto((ImageView)v.findViewById(R.id.foto), lugar.getFoto());
-    }
     }
 
     @Override
@@ -448,8 +451,9 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
                  input = new URL(uri).openStream();
             } catch (IOException e) {
                 e.printStackTrace();
-            }
-            options.inSampleSize = (int) Math.max(
+            }catch (Exception e) {
+                e.printStackTrace();
+            }            options.inSampleSize = (int) Math.max(
                     Math.ceil(options.outWidth / maxAncho),
                     Math.ceil(options.outHeight / maxAlto));
             options.inJustDecodeBounds = false;

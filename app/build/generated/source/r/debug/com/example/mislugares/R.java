@@ -4813,6 +4813,7 @@ containing a value of this type.
     public static final class xml {
         public static final int file_paths=0x7f070000;
         public static final int preferencias=0x7f070001;
+        public static final int remote_config_default=0x7f070002;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

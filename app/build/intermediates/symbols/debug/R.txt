@@ -2855,3 +2855,4 @@ int styleable tw__TweetView_tw__tweet_actions_enabled 5
 int styleable tw__TweetView_tw__tweet_id 0
 int xml file_paths 0x7f070000
 int xml preferencias 0x7f070001
+int xml remote_config_default 0x7f070002

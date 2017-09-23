@@ -173,10 +173,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:exported="true"
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
 
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name="com.facebook.CustomTabMainActivity" />
         <activity
             android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity"
@@ -218,6 +214,11 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
