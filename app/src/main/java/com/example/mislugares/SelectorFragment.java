@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,23 +19,20 @@ public class SelectorFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflador, ViewGroup contenedor,
                              Bundle savedInstanceState) {
-        Log.d("onCreateView SELECTOR", "INI");
         View vista = inflador.inflate(R.layout.fragment_selector,
                 contenedor, false);
         recyclerView =(RecyclerView) vista.findViewById(R.id.recycler_view);
-        Log.d("onCreateView SELECTOR", "FIN");
         return vista;
     }
     @Override
     public void onActivityCreated(Bundle state) {
         super.onActivityCreated(state);
-        Log.d("onActivityCreated SEL", "INI");
         RecyclerView.LayoutManager layoutManager =
                 new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         layoutManager.setAutoMeasureEnabled(true); //Quitar si da problemas
 
-        adaptador = new AdaptadorLugaresFirebase();
+        adaptador = new AdaptadorLugaresFirebase((MainActivity)getActivity());
         adaptador.setOnItemClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 ((MainActivity) getActivity()).muestraLugar(
@@ -44,7 +40,6 @@ public class SelectorFragment extends Fragment {
             }
         });
         recyclerView.setAdapter(adaptador);
-
 
         /*
         adaptador = new AdaptadorLugaresBD(getContext(),
@@ -63,6 +58,5 @@ public class SelectorFragment extends Fragment {
         // Mostrar datos con FirebaseRecyclerAdapter
         recyclerView.setAdapter(new AdaptadorLugaresFirebase());
         */
-        Log.d("onActivityCreated SEL", "FIN");
     }
 }

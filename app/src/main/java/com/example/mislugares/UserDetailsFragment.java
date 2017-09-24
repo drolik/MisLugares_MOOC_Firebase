@@ -73,13 +73,33 @@ public class UserDetailsFragment extends Fragment{
 
         // Foto de usuario
         FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
-        Uri urlImagen = usuario.getPhotoUrl();
-        if (urlImagen != null) {
-            NetworkImageView fotoUsuario = (NetworkImageView)
-                    vista.findViewById(R.id.imageView);
-            Aplicacion aplicacion = (Aplicacion) getActivity().getApplicationContext();
-            fotoUsuario.setImageUrl(urlImagen.toString(),
-                    aplicacion.getLectorImagenes());
+        if (usuario != null) {
+            Uri urlImagen = usuario.getPhotoUrl();
+            if (urlImagen != null) {
+                NetworkImageView fotoUsuario = (NetworkImageView)
+                        vista.findViewById(R.id.imageView);
+                Aplicacion aplicacion = (Aplicacion) getActivity().getApplicationContext();
+                fotoUsuario.setImageUrl(urlImagen.toString(),
+                        aplicacion.getLectorImagenes());
+            }
+        }  else {
+            AuthUI.getInstance().signOut(getActivity())
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            SharedPreferences pref = getActivity().getSharedPreferences(
+                                    "com.example.audiolibros_internal", getActivity().MODE_PRIVATE);
+                            pref.edit().remove("provider").commit();
+                            pref.edit().remove("email").commit();
+                            pref.edit().remove("name").commit();
+                            Intent i = new Intent(getActivity(),LoginActivity.class);
+                            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
+                                    | Intent.FLAG_ACTIVITY_NEW_TASK
+                                    | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(i);
+                            getActivity().finish();
+                        }
+                    });
         }
 
     }

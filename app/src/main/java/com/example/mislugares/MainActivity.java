@@ -33,7 +33,7 @@ import static com.example.mislugares.Aplicacion.mostrarDialogo;
 
 //a
 //asf
-public class MainActivity extends AppCompatActivity implements LocationListener {
+public class MainActivity extends AppCompatActivity implements LocationListener, AdaptadorLugaresFirebase.onFireBaseDataChanged {
 
     public static LugaresFirebase lugares;
     private LocationManager manejador;
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             } else  {
                 PermisosUtilidades.solicitarPermiso(Manifest.permission.ACCESS_FINE_LOCATION,
                         "Sin permiso de localización no es posible mostrar la distancia"+
-                        " a los lugares.", SOLICITUD_PERMISO_LOCALIZACION, this);
+                                " a los lugares.", SOLICITUD_PERMISO_LOCALIZACION, this);
             }
         }
     }
@@ -197,46 +197,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
         activarProveedores();
 
-  /*      extras = getIntent().getExtras();
-        long id;
-        if (extras != null) {
-            id = extras.getLong("id", -1);
-            if (id != -1) {
-                Log.d("actualizarVistas 1", ""+id);
-                if (fragmentVista!=null && SelectorFragment.adaptador.getItemCount()>0) {
-                    fragmentVista.actualizarVistas(0);
-                }
-
-            } else {
-                android.net.Uri url = getIntent().getData();
-                Log.d("URL", url.getQueryParameterNames().toString());
-                String idURL = url.getQueryParameter("id");
-                Log.d("URL_P ", ""+idURL);
-                id = new Long("3");
-                Log.d("ID",""+id);
-                if (fragmentVista!=null && SelectorFragment.adaptador.getItemCount()>0) {
-                    fragmentVista.actualizarVistas(id);
-                }
-
-                //   new String()
-                //  id = Long.getLong("3");
-                //   Log.d("actualizarVistas 3", ""+id);
-            }
-        } else {
-            android.net.Uri url = getIntent().getData();
-            String idURL = url.getQueryParameter("id");
-            id = Long.getLong(idURL);
-            Log.d("actualizarVistas 2", ""+id);
-
-        }
-
-*/
-
-
-
+/*
         if (fragmentVista!=null && SelectorFragment.adaptador.getItemCount()>0) {
             fragmentVista.actualizarVistas(0);
-        }
+        }*/
     }
     private void activarProveedores() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.
@@ -308,7 +272,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     protected void onActivityResult(int requestCode, int resultCode,
                                     Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-Log.d("PASAMOSSSS", "PASAMOOSSSS");
+
         if (requestCode == RESULTADO_PREFERENCIAS) {
             SelectorFragment.adaptador.notifyDataSetChanged();
         }
@@ -323,11 +287,25 @@ Log.d("PASAMOSSSS", "PASAMOOSSSS");
     protected void onStart() {
         super.onStart();
         current = this;
-
     }
 
     public static MainActivity getCurrentContext() {
         return current;
     }
 
+    @Override
+    public void onFireBaseDataChanged() {
+        try {
+            long id;
+            android.net.Uri url = getIntent().getData();
+            if (url != null) {
+                String idURL = url.getQueryParameter("id");
+
+                id = Long.valueOf(idURL);
+
+                getIntent().setData(null);
+                muestraLugar(id);
+            }
+        } catch (Exception e) {e.printStackTrace();}
+    }
 }
