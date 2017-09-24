@@ -42,6 +42,7 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.OnPausedListener;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -83,6 +84,7 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
     @Override
     public View onCreateView(LayoutInflater inflador, ViewGroup contenedor,
                              Bundle savedInstanceState) {
+        Log.d("onCreateView", "INI");
         View vista = inflador.inflate(R.layout.vista_lugar,contenedor,false);
         setHasOptionsMenu(true);
         LinearLayout pUrl = (LinearLayout) vista.findViewById(R.id.barra_url);
@@ -132,6 +134,8 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
                 cambiarFecha();
             }
         });
+
+        Log.d("onCreateView", "FIN");
 
         return vista;
     }
@@ -242,21 +246,54 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
     @Override
     public void onActivityCreated(Bundle state) {
         super.onActivityCreated(state);
+        Log.d("onActivityCreated", "INI");
+
         v = getView();
+
         Bundle extras = getActivity().getIntent().getExtras();
+
         if (extras != null) {
             id = extras.getLong("id", -1);
             if (id != -1) {
+                Log.d("actualizarVistas 1", ""+id);
                 actualizarVistas(id);
+            } else {
+                android.net.Uri url = getActivity().getIntent().getData();
+                Log.d("URL", url.getQueryParameterNames().toString());
+                String idURL = url.getQueryParameter("id");
+                Log.d("URL_P ", ""+idURL);
+                id = new Long("3");
+                Log.d("ID",""+id);
+             //   SelectorFragment.adaptador.notifyDataSetChanged();
+                actualizarVistas(id);
+             //   new String()
+              //  id = Long.getLong("3");
+             //   Log.d("actualizarVistas 3", ""+id);
             }
-        }
+        }/* else {
+                android.net.Uri url = getActivity().getIntent().getData();
+                String idURL = url.getQueryParameter("id");
+                id = Long.getLong(idURL);
+                Log.d("actualizarVistas 2", ""+id);
+
+        }*/
+
+
+
+
+
+
+        Log.d("onActivityCreated", "FIN");
     }
 
     public void actualizarVistas(final long id) {
         this.id = id;
 
         if (id != -1) {
-            lugar = SelectorFragment.adaptador.getItem((int) id);
+            AdaptadorLugaresFirebase test = new AdaptadorLugaresFirebase();
+
+            //lugar = SelectorFragment.adaptador.getItem((int) id);
+            lugar = test.getItem((int) 3);
             if (lugar != null) {
 
                 TextView nombre = (TextView) v.findViewById(R.id.nombre);
