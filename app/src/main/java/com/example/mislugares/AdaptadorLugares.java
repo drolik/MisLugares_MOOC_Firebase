@@ -20,12 +20,10 @@ public class AdaptadorLugares extends
     protected View.OnClickListener onClickListener;
 
     public AdaptadorLugares(Context contexto, Lugares lugares) {
-        Log.d("AdaptadorLugares", "INI");
         this.contexto = contexto;
         this.lugares = lugares;
         inflador = (LayoutInflater) contexto
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        Log.d("AdaptadorLugares", "FIN");
     }
 
     //Creamos nuestro ViewHolder, con los tipos de elementos a modificar
@@ -38,35 +36,29 @@ public class AdaptadorLugares extends
 
         public ViewHolder(View itemView) {
             super(itemView);
-            Log.d("ViewHolder", "INI");
             nombre = (TextView) itemView.findViewById(R.id.nombre);
             direccion = (TextView) itemView.findViewById(R.id.direccion);
             foto = (ImageView) itemView.findViewById(R.id.foto);
             valoracion = (RatingBar) itemView.findViewById(R.id.valoracion);
             distancia = (TextView) itemView.findViewById(R.id.distancia);
-            Log.d("ViewHolder", "FIN");
         }
     }
 
     // Creamos el ViewHolder con las vista de un elemento sin personalizar
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        Log.d("onCreateViewHolder", "INI");
         // Inflamos la vista desde el xml
         View v = inflador.inflate(R.layout.elemento_lista, null);
         v.setOnClickListener(onClickListener);
 
-        Log.d("onCreateViewHolder", "FIN");
         return new ViewHolder(v);
     }
 
     // Usando como base el ViewHolder y lo personalizamos
     @Override
     public void onBindViewHolder(ViewHolder holder, int posicion) {
-        Log.d("onBindViewHolder", "INI");
         Lugar lugar = lugares.elemento(posicion);
         personalizaVista(holder, lugar);
-        Log.d("onBindViewHolder", "FIN");
     }
 
     // Personalizamos un ViewHolder a partir de un lugar
@@ -91,9 +83,12 @@ public class AdaptadorLugares extends
         holder.valoracion.setRating(lugar.getValoracion());
         if (Lugares.posicionActual != null && lugar.getPosicion() != null) {
             int d=(int) Lugares.posicionActual.distancia(lugar.getPosicion());
+            if (distancia == 0) distancia = d+1;
             if (d < distancia) {
                 ViewGroup.LayoutParams params=holder.itemView.getLayoutParams();
-                params.height=100;
+
+                params.height=holder.foto.getHeight()+holder.valoracion.getHeight();
+                if (params.height == 0) params.height = 250;
                 holder.itemView.setLayoutParams(params);
                 if (d < 2000) {
                     holder.distancia.setText(d + " m");

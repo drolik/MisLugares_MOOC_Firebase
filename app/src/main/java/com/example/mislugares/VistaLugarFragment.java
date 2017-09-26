@@ -172,7 +172,7 @@ public class VistaLugarFragment extends Fragment implements TimePickerDialog.OnT
                     byte[] data = baos.toByteArray();
                     imagenRef = Aplicacion.getStorageReference().child(fichero);
                     uploadTask = imagenRef.putBytes(data);
-                    Log.d("MIERROR", "AAAA");
+
                     break;*/
               /*  case SOLICITUD_SUBIR_PUTFILE:
                     Uri file = Uri.fromFile(new File(ficheroDispositivo));

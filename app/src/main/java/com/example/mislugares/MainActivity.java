@@ -156,11 +156,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
             if (manejador.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
                 actualizaMejorLocaliz(manejador.getLastKnownLocation(
                         LocationManager.NETWORK_PROVIDER));
-            } else  {
-                PermisosUtilidades.solicitarPermiso(Manifest.permission.ACCESS_FINE_LOCATION,
-                        "Sin permiso de localización no es posible mostrar la distancia"+
-                                " a los lugares.", SOLICITUD_PERMISO_LOCALIZACION, this);
             }
+        }else  {
+            PermisosUtilidades.solicitarPermiso(Manifest.permission.ACCESS_FINE_LOCATION,
+                    "Sin permiso de localización no es posible mostrar la distancia"+
+                            " a los lugares.", SOLICITUD_PERMISO_LOCALIZACION, this);
         }
     }
 
@@ -196,6 +196,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
         }
 
         activarProveedores();
+//        SelectorFragment.adaptador.notifyDataSetChanged();
+
 
 /*
         if (fragmentVista!=null && SelectorFragment.adaptador.getItemCount()>0) {
