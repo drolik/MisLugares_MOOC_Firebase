@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
     // Servicio
     private static MainActivity current;
 
+    private boolean activados = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -196,8 +198,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
         }
 
         activarProveedores();
-//        SelectorFragment.adaptador.notifyDataSetChanged();
-
 
 /*
         if (fragmentVista!=null && SelectorFragment.adaptador.getItemCount()>0) {
@@ -207,14 +207,17 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
     private void activarProveedores() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.
                 ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            if (!activados) {
             if (manejador.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+                activados = true;
                 manejador.requestLocationUpdates(LocationManager.GPS_PROVIDER,
                         20 * 1000, 5, this);
-            }
+            }else
             if (manejador.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+                activados = true;
                 manejador.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
                         10 * 1000, 10, this);
-            }
+            }}
         } else {
             PermisosUtilidades.solicitarPermiso(Manifest.permission.ACCESS_FINE_LOCATION,
                     "Sin el permiso localización no puedo mostrar la distancia"+

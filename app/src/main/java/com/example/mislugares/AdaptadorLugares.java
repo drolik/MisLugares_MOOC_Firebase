@@ -81,14 +81,15 @@ public class AdaptadorLugares extends
         holder.foto.setImageResource(id);
         holder.foto.setScaleType(ImageView.ScaleType.FIT_END);
         holder.valoracion.setRating(lugar.getValoracion());
+        Log.d("TEST", "TEST");
+        Log.d("TEST", lugar.getNombre());
+        Log.d("Lugares.posicionActual", ""+Lugares.posicionActual);
+        Log.d("lugar.getPosicion() ", ""+lugar.getPosicion());
         if (Lugares.posicionActual != null && lugar.getPosicion() != null) {
             int d=(int) Lugares.posicionActual.distancia(lugar.getPosicion());
-            if (distancia == 0) distancia = d+1;
-            if (d < distancia) {
-                ViewGroup.LayoutParams params=holder.itemView.getLayoutParams();
 
-                params.height=holder.foto.getHeight()+holder.valoracion.getHeight();
-                if (params.height == 0) params.height = 250;
+            if (distancia == 0 || d < distancia) {
+                ViewGroup.LayoutParams params = new  RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);;
                 holder.itemView.setLayoutParams(params);
                 if (d < 2000) {
                     holder.distancia.setText(d + " m");
@@ -99,6 +100,11 @@ public class AdaptadorLugares extends
                 ViewGroup.LayoutParams params=holder.itemView.getLayoutParams();
                 params.height=0;
                 holder.itemView.setLayoutParams(params);
+                if (d < 2000) {
+                    holder.distancia.setText(d + " m");
+                } else {
+                    holder.distancia.setText(d / 1000 + " Km");
+                }
             }
         }
         //holder.distancia.setGravity(Gravity.RIGHT);

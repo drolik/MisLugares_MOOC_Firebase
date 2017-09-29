@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/xml/preferencias.xml",
-        "source": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/res/xml/preferencias.xml"
-    },
-    {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/xml/remote_config_default.xml",
         "source": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/res/xml/remote_config_default.xml"
+    },
+    {
+        "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/xml/preferencias.xml",
+        "source": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/src/main/res/xml/preferencias.xml"
     },
     {
         "merged": "/home/drolik/Diploma/Proyecto/Desarrollo/Mis Lugares/MisLugares_Firebase/app/build/intermediates/res/merged/debug/xml/file_paths.xml",
